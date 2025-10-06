@@ -279,8 +279,24 @@
   }
   .profile-title {
   text-align: center;
-  margin-bottom: 30px;
-  color: #d63384;
+  margin-bottom: 50px;
+  font-size: 2.3rem;
+  color: #3b2e2a;
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+  display: inline-block;
+  }
+  .profile-title::after{
+  content: "";
+  width: 150px;
+  height: 3px;
+  background-color: #d77a8a;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;  
   }
   .form-control {
   border-radius: 10px;
@@ -318,3 +334,147 @@
   .row {
   text-align:;
   }
+
+              /* My orders CSS */ 
+  .orders-section {
+  padding: 60px 0;
+  }
+  .orders-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+  color: #3b2e2a;
+  }
+  .orders-title::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  background-color: #d77a8a;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  }
+  .table {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  }
+  .table th {
+  background-color: #f2d4d0;
+  color: #3b2e2a;
+  }
+  .badge {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  }
+  .badge-processing {
+  background-color: #fff3cd;
+  color: #856404;
+  }
+  .badge-delivered {
+  background-color: #d4edda;
+  color: #155724;
+  }
+  .badge-cancelled {
+  background-color: #f8d7da;
+  color: #721c24;
+  }
+  footer {
+  background-color: #241f21;
+  color: #eee;
+  padding: 40px 0;
+  text-align: center;
+  }
+
+  /* CSS phần đầu trong my orders */
+  /* Hero Section */
+.hero-banner {
+  background: #faf7f7; /* pastel nhẹ */
+  border-radius: 20px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3b2e2a;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  background: #d77a8a;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.btn-hero:hover {
+  background: #b85c6d;
+}
+
+.hero-banner .hero-image {
+  height: 400px;       /* giới hạn chiều cao */
+  object-fit: cover;   /* crop ảnh cho vừa */
+  border-radius: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);   /* icon trắng trên nền tối */
+}
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b2e2a;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.hero-title::after {  /* vẽ ra gạch màu hồng dưới tiêu đề */
+  content: '';          /* tạo phần tử ảo */
+  position: absolute;  /* định vị tuyệt đối dựa trên hero-title */
+  left: 0;             /* bắt đầu từ mép trái chữ */
+  bottom: -10px;       /* cách chữ 10px xuống dưới */
+  width: 100px;               /* độ dài gạch */
+  height: 3px;               /* độ dày gạch */
+  background-color: #d77a8a; /* màu pastel hồng */
+  border-radius: 2px;
+}
+
+      /* Chi tiết đơn hàng */
+.donhang-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #3b2e2a;
+  font-weight: 700;
+  margin-bottom: 80px;
+  margin-left: 400px;
+  position: relative;
+  display: inline-block
+}
+.donhang-title::after {
+  content: '';
+  position: absolute;
+  left: 140px;
+  bottom: -10px;
+  width: 200px;               
+  height: 3px;               
+  background-color: #d77a8a; 
+  border-radius: 2px;
+}
+.title-chitiet {
+  text-align: center;
+  margin-bottom: 50px;
+}
